@@ -1,0 +1,186 @@
+body {
+  font-family: "Vazirmatn", sans-serif;
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f7f8f8;
+}
+
+.header h1 {
+  width: 219px;
+  height: 35px;
+  font-size: 31px;
+  font-style: Bold;
+  font-weight: 900;
+  font-family: "Kalameh Bold";
+  font-weight: 700;
+  color: #282828;
+  margin: 10px 0 45px 0;
+}
+
+.title {
+  font-size: 24px;
+  font-style: Medium;
+  margin-bottom: 60px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.card {
+  width: 400px;
+  height: 510px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.logo {
+  margin-top: 25px;
+  width: 80px;
+  height: 84.47px;
+}
+
+.inputs {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.inputs input {
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #7e787829;
+  padding: 22px 15px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.button {
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #55a3f0;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: none;
+  margin-top: 25px;
+}
+
+.button:hover {
+  background-color: #3a7bd5;
+  animation: shake 0.9s ease-in-out;
+  animation-iteration-count: 1;
+  transition-duration: 0s;
+}
+
+.linkWrapper {
+  text-align: right;
+}
+
+.linkWrapper a {
+  display: block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #3a8bed;
+  font-size: 14px;
+  font-weight: 400;
+  align-items: start;
+  margin-right: 30px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90vw;
+    padding: 20px 15px;
+  }
+
+  .inputs input {
+    width: 100%;
+    font-size: 13px;
+    padding: 14px 10px;
+  }
+
+  .button {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 8px;
+    margin-top: 50px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .linkWrapper {
+    font-size: 13px;
+  }
+
+  .linkWrapper a {
+    margin-right: 15px;
+  }
+}
+
+.passwordWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.eyeBtn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding-left: 35px;
+}
