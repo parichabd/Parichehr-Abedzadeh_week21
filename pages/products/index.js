@@ -26,7 +26,6 @@ export default function Products() {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // محافظت صفحه
   useEffect(() => {
     if (typeof window !== "undefined") {
       const token = localStorage.getItem("token");
@@ -36,7 +35,6 @@ export default function Products() {
     }
   }, []);
 
-  // گرفتن محصولات
   useEffect(() => {
     const loadProducts = async () => {
       try {
@@ -64,12 +62,10 @@ export default function Products() {
     loadProducts();
   }, []);
 
-  // فیلتر
   const filteredProducts = products.filter((p) =>
     p.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // pagination
   const totalPages = Math.ceil(
     filteredProducts.length <= 6 ? 1 : (filteredProducts.length - 6) / 10 + 1
   );
@@ -79,7 +75,6 @@ export default function Products() {
 
   const currentProducts = filteredProducts.slice(indexOfFirst, indexOfLast);
 
-  // add
   const handleAddProduct = async (newProduct) => {
     try {
       const res = await fetch("http://localhost:3000/products", {
@@ -101,7 +96,6 @@ export default function Products() {
     }
   };
 
-  // edit
   const handleEditProduct = async (updatedProduct) => {
     try {
       const res = await fetch(
@@ -128,7 +122,6 @@ export default function Products() {
     }
   };
 
-  // delete
   const openConfirmDialog = (id) => {
     setProductToDelete(id);
     setConfirmOpen(true);

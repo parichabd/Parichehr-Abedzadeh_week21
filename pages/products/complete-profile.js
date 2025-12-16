@@ -52,7 +52,7 @@ function CompleteProfile() {
     setUser(updatedUser);
 
     toast.success("پروفایل با موفقیت ذخیره شد!");
-    setTimeout(() => router.push("/products"), 900); // تغییر navigate به router.push
+    setTimeout(() => router.push("/products"), 900);
   };
 
   return (
