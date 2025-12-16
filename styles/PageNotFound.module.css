@@ -1,0 +1,63 @@
+.PageNotfound {
+  height: 100vh;
+  background-image: url("/2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.page404 {
+  width: 100%;
+  background: rgba(33, 124, 229, 0.815);
+  padding: 40px 20px 60px;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.page404 h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.page404 p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #e8eef6;
+  margin: 6px 0;
+}
+
+.page404 button {
+  margin-top: 24px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #0a50a0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.page404 button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
+}
+
+.page404 button:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.14);
+}
