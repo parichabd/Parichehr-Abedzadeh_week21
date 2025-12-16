@@ -1,0 +1,73 @@
+.container {
+  height: 100vh;
+  background-image: url("/hector-j-rivas-1FxMET2U5dU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.436);
+  backdrop-filter: blur(6px);
+  padding: 40px 50px;
+  border-radius: 16px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-size: 55px;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: rgb(42, 64, 218);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: rgb(29, 47, 176);
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
