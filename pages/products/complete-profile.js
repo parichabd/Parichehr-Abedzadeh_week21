@@ -1,8 +1,8 @@
 import { useState, useContext } from "react";
 import { useRouter } from "next/router"; // جایگزین useNavigate
 import { toast, ToastContainer } from "react-toastify";
-import { useTitle } from "../../../Hooks/useTitle";
-import { UserContext } from "../../../Context/UserProvider";
+import { useTitle } from "../Hooks/useTitle";
+import { UserContext } from "../../Context/UserProvider";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "../../styles/CompleteProfile.module.css";
 

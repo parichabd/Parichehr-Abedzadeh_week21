@@ -15,7 +15,7 @@ function SearchBar({ onSearch = () => {} }) {
   const displayAvatar = user.avatar || "/icon-7797704_640.png";
 
   const handleUserBoxClick = () => {
-    router.push("/complete-profile");
+    router.push("/products/complete-profile");
   };
 
   return (

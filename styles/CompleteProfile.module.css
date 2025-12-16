@@ -26,6 +26,7 @@
   border-radius: 10px;
   background: #f9fbff;
   transition: 0.25s ease;
+  font-family: "Vazirmatn", sans-serif;
   text-align: right;
 }
 
@@ -57,6 +58,7 @@
   border-radius: 10px;
   color: white;
   transition: 0.3s ease;
+  font-family: "Vazirmatn", sans-serif;
 }
 
 .button:hover {
