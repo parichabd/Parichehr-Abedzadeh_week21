@@ -129,7 +129,7 @@ export default function SignInPage() {
         </button>
 
         <p className={styles.linkWrapper}>
-          <Link href="/register" className={styles.link}>
+          <Link href="/log-in" className={styles.link}>
             ایجاد حساب کاربری!
           </Link>
         </p>
