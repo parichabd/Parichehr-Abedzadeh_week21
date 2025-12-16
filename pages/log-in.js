@@ -150,7 +150,7 @@ export default function RegisterPage() {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.logo} src="/Union.png" alt="لوگو" />
+        <img className={styles.logo} src="/logo.png" alt="لوگو" />
         <h2 className={styles.title}>فرم ثبت نام</h2>
 
         <div className={styles.inputs}>
