@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { useRouter } from "next/router"; // جایگزین useNavigate
+import { useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import { useTitle } from "../Hooks/useTitle";
 import { UserContext } from "../../Context/UserProvider";
@@ -8,7 +8,7 @@ import styles from "../../styles/CompleteProfile.module.css";
 
 function CompleteProfile() {
   useTitle("Products : User info");
-  const router = useRouter(); // جایگزین useNavigate
+  const router = useRouter();
   const { user, setUser } = useContext(UserContext);
 
   const [form, setForm] = useState({

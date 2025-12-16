@@ -95,6 +95,7 @@ body {
   cursor: pointer;
   transition: none;
   margin-top: 25px;
+  font-family: "Vazirmatn", sans-serif;
 }
 
 .button:hover {
