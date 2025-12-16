@@ -67,8 +67,8 @@ This is an example of how to list things you need to use the software and how to
 <a href="https://github.com/parichabd">
   <img 
     src="./Screenshots/m.jpg"
-    width="60"
-    height="60"
+    width="60px"
+    height="60px"
     style="border-radius:50%; object-fit:cover;"
   />
 </a>
