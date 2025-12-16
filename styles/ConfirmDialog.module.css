@@ -1,0 +1,106 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(16, 16, 16, 0.219);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.dialog {
+  width: 460px;
+  height: 338px;
+  border-radius: 30px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.dialog img {
+  width: 96px;
+  height: 97px;
+  margin: 45px 0 25px 0;
+}
+
+.dialog p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.actions button {
+  width: 190px;
+  height: 41px;
+  padding: 8px 16px;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.actions .no {
+  background: linear-gradient(135deg, #f43f5e, #e11d48);
+  color: #fff;
+}
+
+.actions .no:hover {
+  background: linear-gradient(135deg, #e11d48, #c81a40);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(244, 63, 94, 0.4);
+}
+
+.actions .yes {
+  background: linear-gradient(135deg, #dfdfdf, #cbcbcb);
+  color: #282828;
+}
+
+.actions .yes:hover {
+  background: linear-gradient(135deg, #cbcbcb, #b8b8b8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+}
+
+.actions button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0s;
+}
+
+.actions button:hover::before {
+  left: 100%;
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.actions button:active {
+  transform: translateY(-1px);
+}

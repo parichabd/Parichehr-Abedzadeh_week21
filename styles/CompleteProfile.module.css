@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form {
+  width: 100%;
+  max-width: 380px;
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Inter, sans-serif;
+}
+
+.input {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f9fbff;
+  transition: 0.25s ease;
+  text-align: right;
+}
+
+.input::placeholder {
+  text-align: right;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.inputFile {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  background: #f9fbff;
+  cursor: pointer;
+}
+
+.button {
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: #1e3a8a;
+}
+
+.avatarPreviewBox {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #eff6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #2563eb;
+  margin: 0 auto;
+}
+
+.avatarPreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noAvatar {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb;
+}

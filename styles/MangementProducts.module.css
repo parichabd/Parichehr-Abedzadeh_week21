@@ -1,0 +1,181 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(16, 16, 16, 0.219);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  width: 460px;
+  min-height: 448px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+
+.modalContent h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #282828;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modalContent label {
+  display: block;
+  margin: 0 8px 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modalContent input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.modalButtons button {
+  height: 42px;
+  width: 195px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.modalButtons button[type="submit"] {
+  background-color: #55a3f0;
+  color: white;
+}
+
+.modalButtons button[type="submit"]:hover {
+  background-color: #3d8ee0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(85, 163, 240, 0.4);
+}
+
+.modalButtons button[type="button"] {
+  background-color: #dfdfdf;
+  color: #282828cc;
+}
+
+.modalButtons button[type="button"]:hover {
+  background-color: #cfcfcf;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.modalButtons button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+}
+
+.Managment {
+  display: flex;
+  gap: 15px;
+}
+
+.ManagmentProducts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1340px;
+  margin: 3rem auto;
+}
+
+.Managment h1 {
+  width: 160px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.button button {
+  background-color: #55a3f0;
+  color: #fff;
+  width: 132px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 15px rgba(85, 163, 240, 0.3);
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.button button:hover {
+  background-color: #3d8ee0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(85, 163, 240, 0.45);
+}
+
+.button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0s;
+}
+
+.button button:hover::before {
+  left: 100%;
+  transition: left 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.errorText {
+  color: red;
+  font-size: 9px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  line-height: 1.2;
+}
